@@ -22,7 +22,7 @@ def get_hex_row(row_birthmark):
     return hex_row
 
 for i in f:
-    f = open("./data/search_result/" + sys.argv[2] + "/" + i.split(",")[0] + "-" + sys.argv[2], 'w')
+    f = open("./data/search_result/" + sys.argv[2] + "/" + i.split(",")[0] + "-" + sys.argv[2] + ".csv", 'w')
     f.write(i+"\n")
     row = i.split(",", 3)
     if len(row) >= 4:

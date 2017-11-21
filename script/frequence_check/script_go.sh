@@ -1,0 +1,1 @@
+for i in 2gram 3gram 4gram 5gram 6gram ; do find ./data/search_result/"$i" -type f | while read file ; do ./script/frequence_check/main "$file" > ./data/frequence_search_result/"$i"/`basename "$file"`;done;done
