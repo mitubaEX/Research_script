@@ -11,11 +11,11 @@ for i in files:
     f05 = open("./data/parsed_search_result/05/" + sys.argv[1] + "/" + os.path.basename(i), 'w')
     f025 = open("./data/parsed_search_result/025/" + sys.argv[1] + "/" + os.path.basename(i), 'w')
     for index, l in enumerate(f):
-        if index <= int(f[1]):
+        if index <= int(frequnce_file[1]):
             f075.write(l + "\n")
-        if index <= int(f[2]):
+        if index <= int(frequnce_file[2]):
             f05.write(l + "\n")
-        if index <= int(f[3]):
+        if index <= int(frequnce_file[3]):
             f025.write(l + "\n")
     f075.close()
     f05.close()
